@@ -45,34 +45,34 @@ int main() {
            cout<<endl;
     
            switch(tarif){
-		case 1 : dpp=nilai-diskon;
-                 	 hasil=dpp*11/100;
+		   case 1 : dpp=nilai-diskon;
+                 hasil=dpp*11/100;
 		         hasil2=hasil+dpp;
 		         pajak="PPN       :  ";
-			 break;
-           	case 2 : dpp=nilai-diskon;
-                 	 hasil=dpp*-20/100;
-                 	 hasil2=hasil+dpp;
-                 	 pajak="PPh 4 (2) : ";
-			 break;
-		case 3 : dpp=nilai-diskon;
-                 	 hasil=dpp*-2/100;
+				break;
+           case 2 : dpp=nilai-diskon;
+                 hasil=dpp*-20/100;
+                 hasil2=hasil+dpp;
+                 pajak="PPh 4 (2) : ";
+				break;
+		   case 3 : dpp=nilai-diskon;
+                 hasil=dpp*-2/100;
 		         hasil2=hasil+dpp;
 		         pajak="PPh 23    : ";
-			 break;
-		case 4 : cout<<"Tarif :";
+				break;
+		   case 4 : cout<<"Tarif :";
 		         cin>>tarif2;
-                 	 dpp=nilai-diskon;
-                 	 hasil=dpp*tarif2/100;
+                 dpp=nilai-diskon;
+                 hasil=dpp*tarif2/100;
 		         hasil2=hasil+dpp;
 		         pajak="Pajak     :  ";
-			 break;
-           	default : tarif2=0;
-                 	 dpp=nilai-diskon;
-                 	 hasil=dpp*tarif2/100;
+				break;
+           default : tarif2=0;
+                 dpp=nilai-diskon;
+                 hasil=dpp*tarif2/100;
 		         hasil2=hasil+dpp;
 		         pajak="Pajak     :  ";
-			 break;
+				break;
 		
 		   }
           cout<<"--------------------------------"<<endl;
@@ -96,7 +96,7 @@ int main() {
        else {            
            cout << "\n===========================\n";            
            cout << "Username / Password Salah! ("<<i<<"x)\n";
-	   cout << "=============================\n\n";
+		   cout << "=============================\n\n";
            i = i +1;
        }   
     } while (i <= 3);
